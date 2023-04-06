@@ -1,6 +1,7 @@
 let shot1 = GetCurrentScriptDirectory~"./se/se_tan00.wav";
 let ballin = GetCurrentScriptDirectory~"./se/forgis.wav";
 let ohmygod = GetCurrentScriptDirectory~"./se/ohmygod.wav";
+let nue_death = GetCurrentScriptDirectory~"./se/nue_death.wav";
 
 task SE_Play(let path, let vl, let delay){
     wait(delay);
