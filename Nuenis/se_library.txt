@@ -1,0 +1,15 @@
+let shot1 = GetCurrentScriptDirectory~"./se/se_tan00.wav";
+let ballin = GetCurrentScriptDirectory~"./se/forgis.wav";
+let ohmygod = GetCurrentScriptDirectory~"./se/ohmygod.wav";
+
+task SE_Play(let path, let vl, let delay){
+    wait(delay);
+    let seobj = ObjSound_Create;
+    ObjSound_Load(seobj,path);
+    ObjSound_Play(seobj);
+    ObjSound_SetVolumeRate(seobj,vl);
+    loop(120){yield;}
+    RemoveSound(path);
+}
+
+function wait(n){loop(n){yield;}}
