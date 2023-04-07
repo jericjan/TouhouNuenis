@@ -9,3 +9,4 @@ To-do:
 - change background maybe
 - stop shooting when player dies
 - remove bullets when boss dies
+- use ballin (country ver) somewhere
